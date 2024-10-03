@@ -6,7 +6,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class',
+  darkMode: ['class', '[data-theme="dark"]'], // 使用 class 和 data-theme 属性
   theme: {
     extend: {
       colors: {
