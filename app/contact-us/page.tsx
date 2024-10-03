@@ -1,33 +1,8 @@
-'use client';
-
-import { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 
 export default function ContactUs() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    setTheme(mediaQuery.matches ? 'dark' : 'light');
-    const handleChange = (e: MediaQueryListEvent) => setTheme(e.matches ? 'dark' : 'light');
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
-
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      document.documentElement.removeAttribute('data-theme');
-    }
-  }, [theme]);
-
-  const toggleTheme = () => setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark');
-
   return (
-    <Layout theme={theme} toggleTheme={toggleTheme}>
+    <Layout>
       <h1 className="text-3xl font-bold mb-6">Contact Us</h1>
       <p className="mb-6">We&apos;d love to hear from you. Please fill out the form below or reach out to us using the contact information provided.</p>
       <form className="space-y-4">

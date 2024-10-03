@@ -1,12 +1,15 @@
+'use client';
+
 import Link from 'next/link';
+import { useTheme } from '../context/ThemeContext';
 
 interface LayoutProps {
   children: React.ReactNode;
-  theme: 'light' | 'dark';
-  toggleTheme: () => void;
 }
 
-export default function Layout({ children, theme, toggleTheme }: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <header className="bg-white dark:bg-gray-800 shadow-sm">
