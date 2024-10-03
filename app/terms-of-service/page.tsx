@@ -8,7 +8,7 @@ export default function TermsOfService() {
       <h1 className='text-3xl font-bold mb-6'>Terms of Service</h1>
       <p className='mb-4'>
         Please read these Terms of Service carefully before using the
-        Diffchecker website and service.
+        Differy website and service.
       </p>
       <h2 className='text-2xl font-semibold mt-6 mb-4'>
         1. Acceptance of Terms
@@ -28,7 +28,7 @@ export default function TermsOfService() {
       </h2>
       <p className='mb-4'>
         The service and its original content, features, and functionality are
-        and will remain the exclusive property of Diffchecker and its licensors.
+        and will remain the exclusive property of Differy and its licensors.
       </p>
       <h2 className='text-2xl font-semibold mt-6 mb-4'>4. Termination</h2>
       <p className='mb-4'>

@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <Layout>
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
-      <p className="mb-4">At Diffchecker, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our service.</p>
+      <p className="mb-4">At DiffDifferychecker, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our service.</p>
       <h2 className="text-2xl font-semibold mt-6 mb-4">Information We Collect</h2>
       <p className="mb-4">We collect information that you provide directly to us when using our service, such as when you create an account or use our text comparison tools.</p>
       <h2 className="text-2xl font-semibold mt-6 mb-4">How We Use Your Information</h2>

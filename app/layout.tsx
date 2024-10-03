@@ -3,7 +3,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Diffchecker",
+  title: "Differy",
   description: "Compare text, images, documents and more",
 };
 

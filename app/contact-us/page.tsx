@@ -22,7 +22,7 @@ export default function ContactUs() {
       </form>
       <div className="mt-8">
         <h2 className="text-2xl font-semibold mb-4">Other Ways to Reach Us</h2>
-        <p className="mb-2"><strong>Email:</strong> support@diffchecker.com</p>
+        <p className="mb-2"><strong>Email:</strong> support@differy.com</p>
         <p className="mb-2"><strong>Phone:</strong> +1 (555) 123-4567</p>
         <p><strong>Address:</strong> 123 Diff Street, Compare City, DC 12345, United States</p>
       </div>
