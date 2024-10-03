@@ -1,22 +1,25 @@
-import type { Metadata } from "next";
-import { ThemeProvider } from './context/ThemeContext';
-import "./globals.css";
+import type { Metadata } from 'next'
+import { ThemeProvider } from './context/ThemeContext'
+import { Analytics } from '@vercel/analytics/react'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Differy",
-  description: "Compare text, images, documents and more",
-};
+  title: 'Differy',
+  description: 'Compare text, images, documents and more',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <ThemeProvider>
-        <body>{children}</body>
+        <body>
+          {children} <Analytics />
+        </body>
       </ThemeProvider>
     </html>
-  );
+  )
 }
