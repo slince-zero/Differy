@@ -9,7 +9,7 @@ export default function TextCompare() {
   const [diffResult, setDiffResult] = useState<Change[]>([]);
   const [isCompared, setIsCompared] = useState(false);
   const [textareaHeight, setTextareaHeight] = useState('24rem'); // 默认高度
-
+ 
   const originalTextareaRef = useRef<HTMLTextAreaElement>(null);
   const changedTextareaRef = useRef<HTMLTextAreaElement>(null);
 
